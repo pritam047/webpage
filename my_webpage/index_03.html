@@ -6,6 +6,8 @@
 <link rel="icon" href="icon.png" type="image/x-icon">
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
 body, html {
@@ -22,7 +24,7 @@ body, html {
     display: none;
 }
 </style>
-<body>
+<body id="myPage">
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
@@ -37,7 +39,7 @@ body, html {
       <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
     </div>
     <div class="w3-col s3">
-            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-hide-small">LOGIN</button>
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-hover-text-red w3-black">LOGIN</button>
                   
                     <div id="id01" class="w3-modal">
                       <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
@@ -80,14 +82,14 @@ body, html {
 </header>
 
 <!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
+
 
 <!-- About Container -->
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE UNIVERSITY</span></h5>
-    <p>SOA is a NAAC accredited Deemed to be University situated in Bhubaneswar, Odisha. </p>
-    <p> SOA was granted greater autonomy (graded autonomy) by the UGC in 2018, one of the few to be granted so in India. </p>
+    <span class="w3-text-black" style="font-size:20px">SOA is a NAAC accredited Deemed to be University situated in Bhubaneswar, Odisha. </span>
+   <p><span class="w3-text-black" style="font-size:20px">SOA was granted greater autonomy (graded autonomy) by the UGC in 2018, one of the few to be granted so in India. </span></p>
   </div>
 </div>
  
@@ -100,7 +102,6 @@ body, html {
                 <img src="assets/images/iter.jpg" alt="react" class="card-image-top rounded img-thumbnail">
           <h3>ITER</h3>
           <h4>(CAMPUS-1)</h4>
-          <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
           <p>CSE & CSIT</p>
           <p>ECE</p>
           <p>EE &EEE</p>
@@ -113,7 +114,6 @@ body, html {
         <img src="assets/images/sps.jpg" alt="react" class="card-image-top rounded img-thumbnail">
         <h3>SPS</h3>
         <h4>(CAMPUS-2)</h4>
-        <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
         <p>Pharmaceutics</p>
         <p>Pharmacology</p>
         <p>Pharmaceutical Chemistry</p>
@@ -126,7 +126,6 @@ body, html {
         <img src="assets/images/sum.jpg" alt="react" class="card-image-top rounded img-thumbnail">
         <h3>IMS & SUM</h3>
         <h4>(CAMPUS-3)</h4>
-        <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
         <p>General Medicine</p>
         <p>Orthopedics</p>
         <p>Phsiology</p>
@@ -161,8 +160,20 @@ body, html {
         </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Powered by <a href="https://www.github.com/codex-iter" title="W3.CSS" target="_blank" class="w3-hover-text-green">codex-iter</a></p>
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Instagram"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="https://www.github.com/codex-iter" title="Codex ITER" target="_blank" class="w3-hover-text-green">codex-iter</a></p>
+  
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
 </footer>
 </body>
 </html>
